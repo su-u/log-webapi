@@ -17,22 +17,6 @@ function returnJson($resultArray){
   exit(0);
 }
 
-
-
-/**
- * ユーザの一覧をjsonで返す
- *
- * @param string user_type  a,admin,o,operatorg,guest,のいずれか
- * @return array
- *          string result   OK,NG
- *          array  users   成功時のみ。ユーザリスト
- *              string name ユーザ名
- *              int age 年齢
- *          string message  失敗時のみ。エラーメッセージ
- *
- * @author kobayashi
- **/
-
 $logstr = $_POST["log"];
 $result = [];
 
