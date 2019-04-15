@@ -33,13 +33,12 @@ function returnJson($resultArray){
  * @author kobayashi
  **/
 
+$logstr = $_POST["log"];
 $result = [];
 
 try {
-  //  値の検証
-//   if (empty($type)) {
-//     throw new RuntimeException("no type...");
-//   }
+
+  file_put_contents("log.log", $logstr."\n", FILE_APPEND);
 
   $result = [
       ['result' => 'ok'],
